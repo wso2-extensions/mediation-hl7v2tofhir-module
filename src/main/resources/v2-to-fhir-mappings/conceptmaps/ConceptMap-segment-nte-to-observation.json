@@ -1,0 +1,197 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "segment-nte-to-observation",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from NTE to <a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></p><p>ACTIVE (not intended for production usage). Published on 2024-03-22 by HL7 International / Orders and Observations (HL7 Orders and Observations Workgroup: <a href=\"http://www.hl7.org/Special/committees/orders\">http://www.hl7.org/Special/com...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>, Rob Hausam: <a href=\"mailto:rrhausam@gmail.com\">rrhausam@gmail.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Segment NTE to the FHIR Observation Resource.</p>\n</div><br/><p><b>Group 1</b> Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td colspan=\"3\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td><td colspan=\"2\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from </td><td><b>datatypemap</b></td><td/><td colspan=\"2\"><b>Codes</b> from </td></tr><tr><td style=\"border-right-width: 0px\">NTE-3</td><td style=\"border-left-width: 0px\">Comment</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">note.text</td><td style=\"border-left-width: 0px\">note.text</td></tr><tr><td style=\"border-right-width: 0px\">NTE-5</td><td style=\"border-left-width: 0px\">Entered By</td><td>XCN[Practitioner]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">note.authorReference(Practitioner)</td><td style=\"border-left-width: 0px\">note.authorReference(Practitioner)</td></tr><tr><td style=\"border-right-width: 0px\">NTE-6</td><td style=\"border-left-width: 0px\">Entered Date/Time</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">note.time</td><td style=\"border-left-width: 0px\">note.time</td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "type",
+      "valueCode" : "derived-from"
+    },
+    {
+      "url" : "label",
+      "valueString" : "Segment NTE to Observation.fsh"
+    },
+    {
+      "url" : "url",
+      "valueUri" : "https://docs.google.com/spreadsheets/d/1AUqCO66awBsL8wzgMesb5jou2q7fVXozQlwz5pC9-3o/edit#gid=0"
+    }],
+    "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+  }],
+  "url" : "http://hl7.org/fhir/uv/v2mappings/segment-nte-to-observation",
+  "version" : "1.0.0-ballot",
+  "name" : "SegmentNTEToObservation",
+  "title" : "Segment NTE to Observation Map",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-22",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "name" : "HL7 Orders and Observations Workgroup",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  },
+  {
+    "name" : "Keith W. Boone",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "kboone@ainq.com"
+    }]
+  },
+  {
+    "name" : "Rob Hausam",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "rrhausam@gmail.com"
+    }]
+  }],
+  "description" : "This ConceptMap represents a mapping from the HL7 V2 Segment NTE to the FHIR Observation Resource.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri" : "NTE",
+  "targetUri" : "Observation",
+  "group" : [{
+    "element" : [{
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "FT"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "NTE-3",
+      "display" : "Comment",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "markdown"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "note.text",
+        "display" : "note.text",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XCN"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "NTE-5",
+      "display" : "Entered By",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Reference(Practitioner)"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "note.authorReference(Practitioner)",
+        "display" : "note.authorReference(Practitioner)",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "XCN[Practitioner]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "DTM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "NTE-6",
+      "display" : "Entered Date/Time",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "dateTime"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "note.time",
+        "display" : "note.time",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}

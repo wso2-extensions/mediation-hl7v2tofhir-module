@@ -1,0 +1,281 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "segment-ais-to-servicerequest",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from AIS to <a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></p><p>ACTIVE (not intended for production usage). Published on 2024-03-22 by HL7 International / Orders and Observations (HL7 Orders and Observations Workgroup: <a href=\"http://www.hl7.org/Special/committees/orders\">http://www.hl7.org/Special/com...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>, Rob Hausam: <a href=\"mailto:rrhausam@gmail.com\">rrhausam@gmail.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Segment AIS to the FHIR ServiceRequest Resource.</p>\n</div><br/><p><b>Group 1</b> Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td colspan=\"4\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"3\"><b>Target Concept Details</b></td><td colspan=\"3\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from </td><td><b>datatypemap</b></td><td><b>value</b></td><td/><td colspan=\"2\"><b>Codes</b> from </td><td><b>antlr</b></td></tr><tr><td style=\"border-right-width: 0px\">AIS-3</td><td style=\"border-left-width: 0px\">Universal Service Identifier</td><td>CWE[Identifier]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">identifier[1]</td><td style=\"border-left-width: 0px\">identifier[1]</td><td/></tr><tr><td style=\"border-right-width: 0px\">AIS-4</td><td style=\"border-left-width: 0px\">Start Date/Time</td><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">occurrencePeriod.start</td><td style=\"border-left-width: 0px\">occurrencePeriod.start</td><td/></tr><tr><td style=\"border-right-width: 0px\">AIS-5</td><td style=\"border-left-width: 0px\">Start Date/Time Offset</td><td/><td>/.start + AIS-5 according to AIS-6 units/</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">occurrencePeriod.start</td><td style=\"border-left-width: 0px\">occurrencePeriod.start</td><td>IF AIS-4 NOT VALUED</td></tr><tr><td style=\"border-right-width: 0px\">AIS-7</td><td style=\"border-left-width: 0px\">Duration</td><td/><td>ServiceRequest.occurrencePeriod.start+ AIS-7</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">occurrencePeriod.end</td><td style=\"border-left-width: 0px\">occurrencePeriod.end</td><td>IF AIS-4 IS VALUED</td></tr><tr><td style=\"border-right-width: 0px\">AIS-11</td><td style=\"border-left-width: 0px\">Placer Supplemental Service Information</td><td>CWE[Identifier]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">identifier[2]</td><td style=\"border-left-width: 0px\">identifier[2]</td><td/></tr><tr><td style=\"border-right-width: 0px\">AIS-12</td><td style=\"border-left-width: 0px\">Filler Supplemental Service Information</td><td>CWE[Identifier]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">identifier[3]</td><td style=\"border-left-width: 0px\">identifier[3]</td><td/></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "type",
+      "valueCode" : "derived-from"
+    },
+    {
+      "url" : "label",
+      "valueString" : "Segment AIS to ServiceRequest.fsh"
+    },
+    {
+      "url" : "url",
+      "valueUri" : "https://docs.google.com/spreadsheets/d/1qyCpHz_vYZsWIkM5VZH4i45zK7AEKd1G6HO2TUAwcaE/edit#gid=0"
+    }],
+    "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+  }],
+  "url" : "http://hl7.org/fhir/uv/v2mappings/segment-ais-to-servicerequest",
+  "version" : "1.0.0-ballot",
+  "name" : "SegmentAISToServiceRequest",
+  "title" : "Segment AIS to ServiceRequest Map",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-22",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "name" : "HL7 Orders and Observations Workgroup",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  },
+  {
+    "name" : "Keith W. Boone",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "kboone@ainq.com"
+    }]
+  },
+  {
+    "name" : "Rob Hausam",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "rrhausam@gmail.com"
+    }]
+  }],
+  "description" : "This ConceptMap represents a mapping from the HL7 V2 Segment AIS to the FHIR ServiceRequest Resource.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri" : "AIS",
+  "targetUri" : "ServiceRequest",
+  "group" : [{
+    "element" : [{
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AIS-3",
+      "display" : "Universal Service Identifier",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "identifier[1]",
+        "display" : "identifier[1]",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[Identifier]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "DTM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AIS-4",
+      "display" : "Start Date/Time",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Period"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "occurrencePeriod.start",
+        "display" : "occurrencePeriod.start",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "NM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AIS-5",
+      "display" : "Start Date/Time Offset",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Period"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "occurrencePeriod.start",
+        "display" : "occurrencePeriod.start",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "/.start + AIS-5 according to AIS-6 units/"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF AIS-4 NOT VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "NM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AIS-7",
+      "display" : "Duration",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Period"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "occurrencePeriod.end",
+        "display" : "occurrencePeriod.end",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "ServiceRequest.occurrencePeriod.start+ AIS-7"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF AIS-4 IS VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AIS-11",
+      "display" : "Placer Supplemental Service Information",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "identifier[2]",
+        "display" : "identifier[2]",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[Identifier]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AIS-12",
+      "display" : "Filler Supplemental Service Information",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "identifier[3]",
+        "display" : "identifier[3]",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[Identifier]"
+        }]
+      }]
+    }]
+  }]
+}

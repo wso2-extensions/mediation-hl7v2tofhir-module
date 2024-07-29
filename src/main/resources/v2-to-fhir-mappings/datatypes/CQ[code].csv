@@ -1,0 +1,2 @@
+v2Xpath,cardinalityMin,cardinalityMax,condition,fhirattr,datatypeMap,vocabularyMap,targetDataType,dataType
+//CQ.2/text(),0,1,,value,,,code,decimal

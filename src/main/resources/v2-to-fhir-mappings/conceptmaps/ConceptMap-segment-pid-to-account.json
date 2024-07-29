@@ -1,0 +1,127 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "segment-pid-to-account",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from PID to <a href=\"http://hl7.org/fhir/R4/account.html\">Account</a></p><p>ACTIVE (not intended for production usage). Published on 2024-03-22 by HL7 International / Orders and Observations (HL7 Orders and Observations Workgroup: <a href=\"http://www.hl7.org/Special/committees/orders\">http://www.hl7.org/Special/com...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>, Rob Hausam: <a href=\"mailto:rrhausam@gmail.com\">rrhausam@gmail.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Segment PID to the FHIR Account Resource.</p>\n</div><br/><p><b>Group 1</b> Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td colspan=\"4\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td><td colspan=\"2\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from </td><td><b>value</b></td><td><b>datatypemap</b></td><td/><td colspan=\"2\"><b>Codes</b> from </td></tr><tr><td style=\"border-right-width: 0px\">PID</td><td style=\"border-left-width: 0px\"></td><td>&quot;active&quot;</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">status</td><td style=\"border-left-width: 0px\">status</td></tr><tr><td style=\"border-right-width: 0px\">PID-18</td><td style=\"border-left-width: 0px\">Patient Account Number</td><td/><td>CX[Identifier]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">identifier</td><td style=\"border-left-width: 0px\">identifier</td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "type",
+      "valueCode" : "derived-from"
+    },
+    {
+      "url" : "label",
+      "valueString" : "Segment PID to Account.fsh"
+    },
+    {
+      "url" : "url",
+      "valueUri" : "https://docs.google.com/spreadsheets/d/1i1A5E-IkTnWarRsHoz-ii_0m2tYyhRjCe1TEodq18fA/edit#gid=0"
+    }],
+    "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+  }],
+  "url" : "http://hl7.org/fhir/uv/v2mappings/segment-pid-to-account",
+  "version" : "1.0.0-ballot",
+  "name" : "SegmentPIDToAccount",
+  "title" : "Segment PID to Account Map",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-22",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "name" : "HL7 Orders and Observations Workgroup",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  },
+  {
+    "name" : "Keith W. Boone",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "kboone@ainq.com"
+    }]
+  },
+  {
+    "name" : "Rob Hausam",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "rrhausam@gmail.com"
+    }]
+  }],
+  "description" : "This ConceptMap represents a mapping from the HL7 V2 Segment PID to the FHIR Account Resource.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri" : "PID",
+  "targetUri" : "Account",
+  "group" : [{
+    "element" : [{
+      "code" : "PID",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "status",
+        "display" : "status",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"active\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CX"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "PID-18",
+      "display" : "Patient Account Number",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Identifier"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "identifier",
+        "display" : "identifier",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CX[Identifier]"
+        }]
+      }]
+    }]
+  }]
+}

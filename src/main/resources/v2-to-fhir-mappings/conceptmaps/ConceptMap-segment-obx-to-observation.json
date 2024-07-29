@@ -1,0 +1,3003 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "segment-obx-to-observation",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from OBX to <a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></p><p>ACTIVE (not intended for production usage). Published on 2024-03-22 by HL7 International / Orders and Observations (HL7 Orders and Observations Workgroup: <a href=\"http://www.hl7.org/Special/committees/orders\">http://www.hl7.org/Special/com...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>, Rob Hausam: <a href=\"mailto:rrhausam@gmail.com\">rrhausam@gmail.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Segment OBX to the FHIR Observation Resource.</p>\n</div><br/><p><b>Group 1</b> Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td colspan=\"5\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"4\"><b>Target Concept Details</b></td><td><b>Comment</b></td><td colspan=\"4\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from </td><td><b>vocabularymap</b></td><td><b>datatypemap</b></td><td><b>value</b></td><td/><td colspan=\"2\"><b>Codes</b> from </td><td><b>antlr</b></td><td><b>narrative</b></td><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-3</td><td style=\"border-left-width: 0px\">Observation Identifier</td><td/><td>CWE[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">code</td><td style=\"border-left-width: 0px\">code</td><td/><td/><td>Note that in Observation there is category field that depending on implementation guide and/or realm is required.   MSH-9.2 Trigger Event, the MSH-3 Sending Application and OBX-3 Observation Identifier's code system ontology  would inform how to value Observation.category.</td></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>NM[Quantity]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueQuantity.value</td><td style=\"border-left-width: 0px\">valueQuantity.value</td><td>IF OBX-2 EQUALS &quot;NM&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueString</td><td style=\"border-left-width: 0px\">valueString</td><td>IF OBX-2 IN (&quot;ST&quot;, &quot;FT&quot;, &quot;TX&quot;)</td><td>Any markup in ST, FT or TX data may not present properly given that valueString is a string data type</td><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>CF[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueCodeableConcept</td><td style=\"border-left-width: 0px\">valueCodeableConcept</td><td>IF OBX-2 EQUALS &quot;CF&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>CNE[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueCodeableConcept</td><td style=\"border-left-width: 0px\">valueCodeableConcept</td><td>IF OBX-2 EQUALS &quot;CNE&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>CE[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueCodeableConcept</td><td style=\"border-left-width: 0px\">valueCodeableConcept</td><td>IF OBX-2 EQUALS &quot;CE&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>CWE[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueCodeableConcept</td><td style=\"border-left-width: 0px\">valueCodeableConcept</td><td>IF OBX-2 EQUALS &quot;CWE&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>IS[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueCodeableConcept</td><td style=\"border-left-width: 0px\">valueCodeableConcept</td><td>IF OBX-2 EQUALS &quot;IS&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>DR[Period]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valuePeriod</td><td style=\"border-left-width: 0px\">valuePeriod</td><td>IF OBX-2 EQUALS &quot;DR&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueDateTime</td><td style=\"border-left-width: 0px\">valueDateTime</td><td>IF OBX-2 IN (&quot;DTM&quot;, &quot;DT&quot;)</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>NR[Range]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueRange</td><td style=\"border-left-width: 0px\">valueRange</td><td>IF OBX-2 EQUALS &quot;NR&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td/><td>OBX-5.1+&quot;-&quot;+OBX-5.2</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueString</td><td style=\"border-left-width: 0px\">valueString</td><td>IF OBX-2 EQUALS &quot;VR&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueTime</td><td style=\"border-left-width: 0px\">valueTime</td><td>IF OBX-2 EQUALS &quot;TM&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>SN[Ratio]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueRatio</td><td style=\"border-left-width: 0px\">valueRatio</td><td>IF (OBX-2 EQUALS &quot;SN&quot; AND OBX-5.3 IN (&quot;:&quot;, &quot;/&quot;)</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>SN[Range]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueRange</td><td style=\"border-left-width: 0px\">valueRange</td><td>IF OBX-2 EQUALS &quot;SN&quot; and OBX-5.3 EQUALS &quot;-&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td/><td>OBX-5.1+&quot; &quot;+OBX-5.2+&quot; &quot;+OBX-5.3+&quot; &quot;+OBX-5.4</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueString</td><td style=\"border-left-width: 0px\">valueString</td><td>IF OBX-2 EQUALS &quot;SN&quot; and OBX-5.3 EQUALS &quot;+&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>SN[Quantity]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueQuantity</td><td style=\"border-left-width: 0px\">valueQuantity</td><td>IF OBX-2 EQUALS &quot;SN&quot; and OBX-5.3 NOT IN (&quot;:&quot;, &quot;/&quot;, &quot;-&quot;, &quot;+&quot;)</td><td/><td>Note that OBX-5 and OBX-6 resolve to different components for the same Quantity data type.</td></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueSampledData</td><td style=\"border-left-width: 0px\">valueSampledData</td><td>IF OBX-2 EQUALS &quot;NA&quot;</td><td/><td>Need to add text on converting NA to SampledData</td></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td/><td>&quot;https://hl7.org/fhir/R5/StructureDefinition/extension-Observation.valueAttachment</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[1].url</td><td style=\"border-left-width: 0px\">extension[1].url</td><td>IF OBX-2 EQUALS &quot;ED&quot; AND IF OBX-5.4 EQUALS &quot;Base64&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>ED[Attachment]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[1].valueAttachment</td><td style=\"border-left-width: 0px\">extension[1].valueAttachment</td><td>IF OBX-2 EQUALS &quot;ED&quot; AND IF OBX-5.4 EQUALS &quot;Base64&quot;</td><td/><td>We are for now addressing Base64 that cover .pdf, pictures and other binaries.  If somebody does this, we will address those.</td></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td/><td>&quot;https://hl7.org/fhir/R5/StructureDefinition/extension-Observation.valueAttachment</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[1].url</td><td style=\"border-left-width: 0px\">extension[1].url</td><td>IF OBX-2 EQUALS &quot;RP&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-5</td><td style=\"border-left-width: 0px\">Observation Value</td><td/><td>ED[Attachment]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[1].valueAttachment</td><td style=\"border-left-width: 0px\">extension[1].valueAttachment</td><td>IF OBX-2 EQUALS &quot;RP&quot;</td><td/><td>To be resolved when we resolve DocumentReference and valueAttachment</td></tr><tr><td style=\"border-right-width: 0px\">OBX-6</td><td style=\"border-left-width: 0px\">Units</td><td/><td>CWE[Quantity]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueQuantity</td><td style=\"border-left-width: 0px\">valueQuantity</td><td>IF OBX-2 EQUALS &quot;SN&quot; and OBX-5.3 NOT IN (&quot;:&quot;, &quot;/&quot;, &quot;-&quot;, &quot;+&quot;)</td><td/><td>Note that OBX-5 and OBX-6 resolve to different components for the same Quantity data type.</td></tr><tr><td style=\"border-right-width: 0px\">OBX-6</td><td style=\"border-left-width: 0px\">Units</td><td/><td>CWE[Quantity]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueQuantity</td><td style=\"border-left-width: 0px\">valueQuantity</td><td>IF OBX-2 IN (&quot;NA&quot;, &quot;NM&quot;)</td><td/><td>Note that OBX-5 and OBX-6 resolve to different components for the same Quantity data type.</td></tr><tr><td style=\"border-right-width: 0px\">OBX-6</td><td style=\"border-left-width: 0px\">Units</td><td/><td>CWE[Quantity]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueRange.low</td><td style=\"border-left-width: 0px\">valueRange.low</td><td>IF OBX-2 EQUALS &quot;SN&quot; AND OBX-5.3 EQUALS &quot;-&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-6</td><td style=\"border-left-width: 0px\">Units</td><td/><td>CWE[Quantity]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueRange.high</td><td style=\"border-left-width: 0px\">valueRange.high</td><td>IF OBX-2 EQUALS &quot;SN&quot; AND OBX-5.3 EQUALS &quot;-&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-6</td><td style=\"border-left-width: 0px\">Units</td><td/><td>CWE[Quantity]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueRatio.numerator</td><td style=\"border-left-width: 0px\">valueRatio.numerator</td><td>IF (OBX-2 EQUALS &quot;SN&quot; AND (OBX-5.3 IN (&quot;:&quot;, &quot;/&quot;))</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-6</td><td style=\"border-left-width: 0px\">Units</td><td/><td>CWE[Quantity]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">valueRatio.denominator</td><td style=\"border-left-width: 0px\">valueRatio.denominator</td><td>IF (OBX-2 EQUALS &quot;SN&quot; AND (OBX-5.3 IN (&quot;:&quot;, &quot;/&quot;))</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-7</td><td style=\"border-left-width: 0px\">References Range</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">referenceRange.text</td><td style=\"border-left-width: 0px\">referenceRange.text</td><td/><td/><td>If OBX-7 is sufficiently parseable, then the low, high, type, appliesTo, and/or age may be used.</td></tr><tr><td style=\"border-right-width: 0px\">OBX-8</td><td style=\"border-left-width: 0px\">Interpretation Codes</td><td>InterpretationCode</td><td>CWE[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">interpretation</td><td style=\"border-left-width: 0px\">interpretation</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-10</td><td style=\"border-left-width: 0px\">Nature of Abnormal Test</td><td/><td/><td>&quot;http://hl7.org/fhir/StructureDefinition/observation-nature-of-abnormal-test&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[2].uri</td><td style=\"border-left-width: 0px\">extension[2].uri</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-10</td><td style=\"border-left-width: 0px\">Nature of Abnormal Test</td><td>NatureOfAbnormalTesting</td><td>CWE[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[2].valueCodeableConcept</td><td style=\"border-left-width: 0px\">extension[2].valueCodeableConcept</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-11</td><td style=\"border-left-width: 0px\">Observation Result Status</td><td>ObservationStatus</td><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">status</td><td style=\"border-left-width: 0px\">status</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-11</td><td style=\"border-left-width: 0px\">Observation Result Status</td><td/><td/><td>/cannot-be-obtained/</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">dataAbsentReason.coding[1].code</td><td style=\"border-left-width: 0px\">dataAbsentReason.coding[1].code</td><td>IF OBX-11 IS &quot;X&quot;</td><td/><td>Needs to be requested</td></tr><tr><td style=\"border-right-width: 0px\">OBX-11</td><td style=\"border-left-width: 0px\">Observation Result Status</td><td/><td/><td>&quot;http://terminology.hl7.org/CodeSystem/data-absent-reason&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">dataAbsentReason.coding[1].system</td><td style=\"border-left-width: 0px\">dataAbsentReason.coding[1].system</td><td>IF OBX-11 IS &quot;X&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-11</td><td style=\"border-left-width: 0px\">Observation Result Status</td><td/><td/><td>&quot;not-asked&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">dataAbsentReason.coding[2].code</td><td style=\"border-left-width: 0px\">dataAbsentReason.coding[2].code</td><td>IF OBX-11 IS &quot;N&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-11</td><td style=\"border-left-width: 0px\">Observation Result Status</td><td/><td/><td>&quot;http://terminology.hl7.org/CodeSystem/data-absent-reason&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">dataAbsentReason.coding[2].system</td><td style=\"border-left-width: 0px\">dataAbsentReason.coding[2].system</td><td>IF OBX-11 IS &quot;N&quot;</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-14</td><td style=\"border-left-width: 0px\">Date/Time of the Observation</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">effectiveDateTime</td><td style=\"border-left-width: 0px\">effectiveDateTime</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-15</td><td style=\"border-left-width: 0px\">Producer's ID</td><td/><td>CWE[Organization]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[2](Organization)</td><td style=\"border-left-width: 0px\">performer[2](Organization)</td><td/><td/><td>We are mapping this to an identifier considering the definition (used for a unique identifier of the producer), although that does not fit the use of the CWE data type in HL7 v2.  Depending on context (e.g., US CLIA or IHE LTW, or ILW) this may reflect a location (US CLIA) or an organization (IHE LTW or ILW).</td></tr><tr><td style=\"border-right-width: 0px\">OBX-15</td><td style=\"border-left-width: 0px\">Producer's ID</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[2](PractitionerRole)</td><td style=\"border-left-width: 0px\">performer[2](PractitionerRole)</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-16</td><td style=\"border-left-width: 0px\">Responsible Observer</td><td/><td>XCN[Practitioner]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[1](PractitionerRole.practitioner(Practitioner))</td><td style=\"border-left-width: 0px\">performer[1](PractitionerRole.practitioner(Practitioner))</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-16</td><td style=\"border-left-width: 0px\">Responsible Observer</td><td/><td/><td>&quot;responsibleObserver&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[1](PractitionerRole.code.coding.code)</td><td style=\"border-left-width: 0px\">performer[1](PractitionerRole.code.coding.code)</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-16</td><td style=\"border-left-width: 0px\">Responsible Observer</td><td/><td/><td>&quot;http://terminology.hl7.org/CodeSystem/practitioner-role&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[1](PractitionerRole.code.coding.system)</td><td style=\"border-left-width: 0px\">performer[1](PractitionerRole.code.coding.system)</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-17</td><td style=\"border-left-width: 0px\">Observation Method</td><td/><td>CWE[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">method</td><td style=\"border-left-width: 0px\">method</td><td/><td/><td>The cardinality of Observation.method is 0..1 while the source allows for multiple methods.  As we are not aware of anybody populating multiples in HL7 v2, we did not provide further mapping guidance.  If you need to support multiples, please submit a gForge to OO for the HL7 v2 to FHIR mapping Implementation Guide.</td></tr><tr><td style=\"border-right-width: 0px\">OBX-18</td><td style=\"border-left-width: 0px\">Equipment Instance Identifier</td><td/><td>EI[Identifier-Extension]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">device(Device.identifier)</td><td style=\"border-left-width: 0px\">device(Device.identifier)</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-19</td><td style=\"border-left-width: 0px\">Date/Time of the Analysis</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[2].url</td><td style=\"border-left-width: 0px\">extension[2].url</td><td/><td/><td>&quot;http://hl7.org/fhir/StructureDefinition/observation-analysis-date-time&quot;</td></tr><tr><td style=\"border-right-width: 0px\">OBX-19</td><td style=\"border-left-width: 0px\">Date/Time of the Analysis</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[2].valueDateTime</td><td style=\"border-left-width: 0px\">extension[2].valueDateTime</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-20</td><td style=\"border-left-width: 0px\">Observation Site</td><td/><td>CWE[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">bodySite</td><td style=\"border-left-width: 0px\">bodySite</td><td/><td/><td>The cardinality of Observation.bodySite is 0..1 while the source allows for multiple body sites.  As we are not aware of anybody populating multiples in HL7 v2, we did not provide further mapping guidance.  If you need to support multiples, please submit a gForge to OO for the HL7 v2 to FHIR mapping Implementation Guide.</td></tr><tr><td style=\"border-right-width: 0px\">OBX-21</td><td style=\"border-left-width: 0px\">Observation Instance Identifier</td><td/><td>EI[Identifier-Extension]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">identifier</td><td style=\"border-left-width: 0px\">identifier</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-21</td><td style=\"border-left-width: 0px\">Observation Instance Identifier</td><td/><td/><td>&quot;FILL&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">identifier.type.coding.code</td><td style=\"border-left-width: 0px\">identifier.type.coding.code</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-23</td><td style=\"border-left-width: 0px\">Performing Organization Name</td><td/><td>XON[Organization]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[2](Organization)</td><td style=\"border-left-width: 0px\">performer[2](Organization)</td><td>IF OBX-25 NOT VALUED</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-23</td><td style=\"border-left-width: 0px\">Performing Organization Name</td><td/><td>XON[Organization]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[2](PractitionerRole[1].organization(Organization))</td><td style=\"border-left-width: 0px\">performer[2](PractitionerRole[1].organization(Organization))</td><td>IF OBX-25 VALUED</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-24</td><td style=\"border-left-width: 0px\">Performing Organization Address</td><td/><td>XAD[Address]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[2](Organization.address)</td><td style=\"border-left-width: 0px\">performer[2](Organization.address)</td><td>IF OBX-25 NOT VALUED</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-24</td><td style=\"border-left-width: 0px\">Performing Organization Address</td><td/><td>XAD[Address]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[2](PractitionerRole[1].organization(Organization.address))</td><td style=\"border-left-width: 0px\">performer[2](PractitionerRole[1].organization(Organization.address))</td><td>IF OBX-25 VALUED</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-25</td><td style=\"border-left-width: 0px\">Performing Organization Medical Director</td><td/><td>XCN[PractitionerRole]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[2](PractitionerRole[1].practitioner)</td><td style=\"border-left-width: 0px\">performer[2](PractitionerRole[1].practitioner)</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-25</td><td style=\"border-left-width: 0px\">Performing Organization Medical Director</td><td/><td/><td>&quot;MDIR&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[2](PractitionerRole[1].code.coding.code)</td><td style=\"border-left-width: 0px\">performer[2](PractitionerRole[1].code.coding.code)</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-25</td><td style=\"border-left-width: 0px\">Performing Organization Medical Director</td><td/><td/><td>&quot;http://terminology.hl7.org/CodeSystem/v2-0912&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">performer[2](PractitionerRole[1].code.coding.system)</td><td style=\"border-left-width: 0px\">performer[2](PractitionerRole[1].code.coding.system)</td><td/><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-33</td><td style=\"border-left-width: 0px\">Observation Related Specimen Identifier</td><td/><td/><td>&quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.specimen</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[1].uri</td><td style=\"border-left-width: 0px\">extension[1].uri</td><td>IF OBX-33 COUNT&gt;1</td><td/><td>Note that in v2 messages the observations that a calculated observation is derived from on and involve multiple specimens are typically not included with the message. To enable relating the calculated observation to the correct specimens it relates to, the v2 message should include the originating observations that in turn use OBX-33 to link to the correct specimens.  Without that, and if there are multiple specimens in OBX-33, there is no standard method to correctly associate the observation with the correct specimens.  The implementer will have to devise an appropriate method for that in their context.</td></tr><tr><td style=\"border-right-width: 0px\">OBX-33</td><td style=\"border-left-width: 0px\">Observation Related Specimen Identifier</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[1].valueReference(Group.member.entity(Specimen.identifier[1])</td><td style=\"border-left-width: 0px\">extension[1].valueReference(Group.member.entity(Specimen.identifier[1])</td><td>IF OBX-33 COUNT&gt;1</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-33</td><td style=\"border-left-width: 0px\">Observation Related Specimen Identifier</td><td/><td/><td>&quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.specimen</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[2].uri</td><td style=\"border-left-width: 0px\">extension[2].uri</td><td>IF OBX-33 COUNT&gt;1</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-33</td><td style=\"border-left-width: 0px\">Observation Related Specimen Identifier</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[2].valueReference(Group.member.entity(Specimen.identifier[2]))</td><td style=\"border-left-width: 0px\">extension[2].valueReference(Group.member.entity(Specimen.identifier[2]))</td><td>IF OBX-33 COUNT&gt;1</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-33</td><td style=\"border-left-width: 0px\">Observation Related Specimen Identifier</td><td/><td>EIP[Identifier-PlacerAssignedIdentifier]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">specimen(Specimen.identifier[1])</td><td style=\"border-left-width: 0px\">specimen(Specimen.identifier[1])</td><td>IF OBX-33 COUNT=1</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">OBX-33</td><td style=\"border-left-width: 0px\">Observation Related Specimen Identifier</td><td/><td>EIP[Identifier-FillerAssignedIdentifier]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">specimen(Specimen.identifier[2])</td><td style=\"border-left-width: 0px\">specimen(Specimen.identifier[2])</td><td>IF OBX-33 COUNT=1</td><td/><td/></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "type",
+      "valueCode" : "derived-from"
+    },
+    {
+      "url" : "label",
+      "valueString" : "Segment OBX to Observation.fsh"
+    },
+    {
+      "url" : "url",
+      "valueUri" : "https://docs.google.com/spreadsheets/d/1--KYCqp4IKrDO4NyW6ieA69pJylKfnGYHoOTAU7Rkyk/edit#gid=0"
+    }],
+    "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+  }],
+  "url" : "http://hl7.org/fhir/uv/v2mappings/segment-obx-to-observation",
+  "version" : "1.0.0-ballot",
+  "name" : "SegmentOBXToObservation",
+  "title" : "Segment OBX to Observation Map",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-22",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "name" : "HL7 Orders and Observations Workgroup",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  },
+  {
+    "name" : "Keith W. Boone",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "kboone@ainq.com"
+    }]
+  },
+  {
+    "name" : "Rob Hausam",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "rrhausam@gmail.com"
+    }]
+  }],
+  "description" : "This ConceptMap represents a mapping from the HL7 V2 Segment OBX to the FHIR Observation Resource.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri" : "OBX",
+  "targetUri" : "Observation",
+  "group" : [{
+    "element" : [{
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-3",
+      "display" : "Observation Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "code",
+        "display" : "code",
+        "equivalence" : "equivalent",
+        "comment" : "Note that in Observation there is category field that depending on implementation guide and/or realm is required.   MSH-9.2 Trigger Event, the MSH-3 Sending Application and OBX-3 Observation Identifier's code system ontology  would inform how to value Observation.category.",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[CodeableConcept]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "quantity"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueQuantity.value",
+        "display" : "valueQuantity.value",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "NM[Quantity]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"NM\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "string"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueString",
+        "display" : "valueString",
+        "equivalence" : "equivalent",
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 IN (\"ST\", \"FT\", \"TX\")"
+        },
+        {
+          "property" : "narrative",
+          "value" : "Any markup in ST, FT or TX data may not present properly given that valueString is a string data type"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueCodeableConcept",
+        "display" : "valueCodeableConcept",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CF[CodeableConcept]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"CF\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueCodeableConcept",
+        "display" : "valueCodeableConcept",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CNE[CodeableConcept]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"CNE\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueCodeableConcept",
+        "display" : "valueCodeableConcept",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CE[CodeableConcept]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"CE\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueCodeableConcept",
+        "display" : "valueCodeableConcept",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[CodeableConcept]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"CWE\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueCodeableConcept",
+        "display" : "valueCodeableConcept",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "IS[CodeableConcept]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"IS\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Period"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valuePeriod",
+        "display" : "valuePeriod",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "DR[Period]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"DR\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "dateTime"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueDateTime",
+        "display" : "valueDateTime",
+        "equivalence" : "equivalent",
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 IN (\"DTM\", \"DT\")"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Range"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueRange",
+        "display" : "valueRange",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "NR[Range]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"NR\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "string"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueString",
+        "display" : "valueString",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "OBX-5.1+\"-\"+OBX-5.2"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"VR\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "time"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueTime",
+        "display" : "valueTime",
+        "equivalence" : "equivalent",
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"TM\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Ratio"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueRatio",
+        "display" : "valueRatio",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "SN[Ratio]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF (OBX-2 EQUALS \"SN\" AND OBX-5.3 IN (\":\", \"/\")"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Range"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueRange",
+        "display" : "valueRange",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "SN[Range]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"SN\" and OBX-5.3 EQUALS \"-\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "string"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueString",
+        "display" : "valueString",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "OBX-5.1+\" \"+OBX-5.2+\" \"+OBX-5.3+\" \"+OBX-5.4"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"SN\" and OBX-5.3 EQUALS \"+\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Quantity"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueQuantity",
+        "display" : "valueQuantity",
+        "equivalence" : "equivalent",
+        "comment" : "Note that OBX-5 and OBX-6 resolve to different components for the same Quantity data type.",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "SN[Quantity]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"SN\" and OBX-5.3 NOT IN (\":\", \"/\", \"-\", \"+\")"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "SampledData"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueSampledData",
+        "display" : "valueSampledData",
+        "equivalence" : "equivalent",
+        "comment" : "Need to add text on converting NA to SampledData",
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"NA\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[1].url",
+        "display" : "extension[1].url",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"https://hl7.org/fhir/R5/StructureDefinition/extension-Observation.valueAttachment"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"ED\" AND IF OBX-5.4 EQUALS \"Base64\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Attachment"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[1].valueAttachment",
+        "display" : "extension[1].valueAttachment",
+        "equivalence" : "equivalent",
+        "comment" : "We are for now addressing Base64 that cover .pdf, pictures and other binaries.  If somebody does this, we will address those.",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "ED[Attachment]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"ED\" AND IF OBX-5.4 EQUALS \"Base64\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[1].url",
+        "display" : "extension[1].url",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"https://hl7.org/fhir/R5/StructureDefinition/extension-Observation.valueAttachment"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"RP\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "varies"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-5",
+      "display" : "Observation Value",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Attachment"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[1].valueAttachment",
+        "display" : "extension[1].valueAttachment",
+        "equivalence" : "equivalent",
+        "comment" : "To be resolved when we resolve DocumentReference and valueAttachment",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "ED[Attachment]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"RP\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-6",
+      "display" : "Units",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Quantity"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueQuantity",
+        "display" : "valueQuantity",
+        "equivalence" : "equivalent",
+        "comment" : "Note that OBX-5 and OBX-6 resolve to different components for the same Quantity data type.",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[Quantity]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"SN\" and OBX-5.3 NOT IN (\":\", \"/\", \"-\", \"+\")"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-6",
+      "display" : "Units",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Quantity"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueQuantity",
+        "display" : "valueQuantity",
+        "equivalence" : "equivalent",
+        "comment" : "Note that OBX-5 and OBX-6 resolve to different components for the same Quantity data type.",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[Quantity]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 IN (\"NA\", \"NM\")"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-6",
+      "display" : "Units",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "SimpleQuantity"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueRange.low",
+        "display" : "valueRange.low",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[Quantity]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"SN\" AND OBX-5.3 EQUALS \"-\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-6",
+      "display" : "Units",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "SimpleQuantity"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueRange.high",
+        "display" : "valueRange.high",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[Quantity]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-2 EQUALS \"SN\" AND OBX-5.3 EQUALS \"-\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-6",
+      "display" : "Units",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Quantity"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueRatio.numerator",
+        "display" : "valueRatio.numerator",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[Quantity]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF (OBX-2 EQUALS \"SN\" AND (OBX-5.3 IN (\":\", \"/\"))"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-6",
+      "display" : "Units",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Quantity"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "valueRatio.denominator",
+        "display" : "valueRatio.denominator",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[Quantity]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF (OBX-2 EQUALS \"SN\" AND (OBX-5.3 IN (\":\", \"/\"))"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ST"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-7",
+      "display" : "References Range",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "string"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "referenceRange.text",
+        "display" : "referenceRange.text",
+        "equivalence" : "equivalent",
+        "comment" : "If OBX-7 is sufficiently parseable, then the low, high, type, appliesTo, and/or age may be used."
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-8",
+      "display" : "Interpretation Codes",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "interpretation",
+        "display" : "interpretation",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[CodeableConcept]"
+        },
+        {
+          "property" : "vocabulary-map",
+          "value" : "InterpretationCode"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ID"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-10",
+      "display" : "Nature of Abnormal Test",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[2].uri",
+        "display" : "extension[2].uri",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://hl7.org/fhir/StructureDefinition/observation-nature-of-abnormal-test\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ID"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-10",
+      "display" : "Nature of Abnormal Test",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[2].valueCodeableConcept",
+        "display" : "extension[2].valueCodeableConcept",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[CodeableConcept]"
+        },
+        {
+          "property" : "vocabulary-map",
+          "value" : "NatureOfAbnormalTesting"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ID"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-11",
+      "display" : "Observation Result Status",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "code"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "status",
+        "display" : "status",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "vocabulary-map",
+          "value" : "ObservationStatus"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ID"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-11",
+      "display" : "Observation Result Status",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "dataAbsentReason.coding[1].code",
+        "display" : "dataAbsentReason.coding[1].code",
+        "equivalence" : "equivalent",
+        "comment" : "Needs to be requested",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "/cannot-be-obtained/"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-11 IS \"X\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ID"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-11",
+      "display" : "Observation Result Status",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "dataAbsentReason.coding[1].system",
+        "display" : "dataAbsentReason.coding[1].system",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://terminology.hl7.org/CodeSystem/data-absent-reason\""
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-11 IS \"X\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ID"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-11",
+      "display" : "Observation Result Status",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "dataAbsentReason.coding[2].code",
+        "display" : "dataAbsentReason.coding[2].code",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"not-asked\""
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-11 IS \"N\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ID"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-11",
+      "display" : "Observation Result Status",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "dataAbsentReason.coding[2].system",
+        "display" : "dataAbsentReason.coding[2].system",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://terminology.hl7.org/CodeSystem/data-absent-reason\""
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-11 IS \"N\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "DTM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-14",
+      "display" : "Date/Time of the Observation",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "dateTime"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "effectiveDateTime",
+        "display" : "effectiveDateTime",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-15",
+      "display" : "Producer's ID",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "identifier"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[2](Organization)",
+        "display" : "performer[2](Organization)",
+        "equivalence" : "equivalent",
+        "comment" : "We are mapping this to an identifier considering the definition (used for a unique identifier of the producer), although that does not fit the use of the CWE data type in HL7 v2.  Depending on context (e.g., US CLIA or IHE LTW, or ILW) this may reflect a location (US CLIA) or an organization (IHE LTW or ILW).",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[Organization]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-15",
+      "display" : "Producer's ID",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[2](PractitionerRole)",
+        "display" : "performer[2](PractitionerRole)",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XCN"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-16",
+      "display" : "Responsible Observer",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Reference(PractitionerRole)"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[1](PractitionerRole.practitioner(Practitioner))",
+        "display" : "performer[1](PractitionerRole.practitioner(Practitioner))",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "XCN[Practitioner]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XCN"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-16",
+      "display" : "Responsible Observer",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[1](PractitionerRole.code.coding.code)",
+        "display" : "performer[1](PractitionerRole.code.coding.code)",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"responsibleObserver\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XCN"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-16",
+      "display" : "Responsible Observer",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[1](PractitionerRole.code.coding.system)",
+        "display" : "performer[1](PractitionerRole.code.coding.system)",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://terminology.hl7.org/CodeSystem/practitioner-role\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-17",
+      "display" : "Observation Method",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "method",
+        "display" : "method",
+        "equivalence" : "equivalent",
+        "comment" : "The cardinality of Observation.method is 0..1 while the source allows for multiple methods.  As we are not aware of anybody populating multiples in HL7 v2, we did not provide further mapping guidance.  If you need to support multiples, please submit a gForge to OO for the HL7 v2 to FHIR mapping Implementation Guide.",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[CodeableConcept]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EI"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-18",
+      "display" : "Equipment Instance Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Identifier"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "device(Device.identifier)",
+        "display" : "device(Device.identifier)",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "EI[Identifier-Extension]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "DTM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-19",
+      "display" : "Date/Time of the Analysis",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[2].url",
+        "display" : "extension[2].url",
+        "equivalence" : "equivalent",
+        "comment" : "\"http://hl7.org/fhir/StructureDefinition/observation-analysis-date-time\""
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "DTM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-19",
+      "display" : "Date/Time of the Analysis",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "dateTime"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[2].valueDateTime",
+        "display" : "extension[2].valueDateTime",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-20",
+      "display" : "Observation Site",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "bodySite",
+        "display" : "bodySite",
+        "equivalence" : "equivalent",
+        "comment" : "The cardinality of Observation.bodySite is 0..1 while the source allows for multiple body sites.  As we are not aware of anybody populating multiples in HL7 v2, we did not provide further mapping guidance.  If you need to support multiples, please submit a gForge to OO for the HL7 v2 to FHIR mapping Implementation Guide.",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[CodeableConcept]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EI"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-21",
+      "display" : "Observation Instance Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Identifier"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "identifier",
+        "display" : "identifier",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "EI[Identifier-Extension]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EI"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-21",
+      "display" : "Observation Instance Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "code"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "identifier.type.coding.code",
+        "display" : "identifier.type.coding.code",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"FILL\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XON"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-23",
+      "display" : "Performing Organization Name",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Reference(Organization)"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[2](Organization)",
+        "display" : "performer[2](Organization)",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "XON[Organization]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-25 NOT VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XON"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-23",
+      "display" : "Performing Organization Name",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Reference(Organization)"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[2](PractitionerRole[1].organization(Organization))",
+        "display" : "performer[2](PractitionerRole[1].organization(Organization))",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "XON[Organization]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-25 VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XAD"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-24",
+      "display" : "Performing Organization Address",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Address"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[2](Organization.address)",
+        "display" : "performer[2](Organization.address)",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "XAD[Address]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-25 NOT VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XAD"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-24",
+      "display" : "Performing Organization Address",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Address"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[2](PractitionerRole[1].organization(Organization.address))",
+        "display" : "performer[2](PractitionerRole[1].organization(Organization.address))",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "XAD[Address]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-25 VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XCN"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-25",
+      "display" : "Performing Organization Medical Director",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Reference(PractitionerRole)"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[2](PractitionerRole[1].practitioner)",
+        "display" : "performer[2](PractitionerRole[1].practitioner)",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "XCN[PractitionerRole]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XCN"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-25",
+      "display" : "Performing Organization Medical Director",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "code"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[2](PractitionerRole[1].code.coding.code)",
+        "display" : "performer[2](PractitionerRole[1].code.coding.code)",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"MDIR\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XCN"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-25",
+      "display" : "Performing Organization Medical Director",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "performer[2](PractitionerRole[1].code.coding.system)",
+        "display" : "performer[2](PractitionerRole[1].code.coding.system)",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://terminology.hl7.org/CodeSystem/v2-0912\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EIP"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-33",
+      "display" : "Observation Related Specimen Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Reference"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[1].uri",
+        "display" : "extension[1].uri",
+        "equivalence" : "equivalent",
+        "comment" : "Note that in v2 messages the observations that a calculated observation is derived from on and involve multiple specimens are typically not included with the message. To enable relating the calculated observation to the correct specimens it relates to, the v2 message should include the originating observations that in turn use OBX-33 to link to the correct specimens.  Without that, and if there are multiple specimens in OBX-33, there is no standard method to correctly associate the observation with the correct specimens.  The implementer will have to devise an appropriate method for that in their context.",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.specimen"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-33 COUNT>1"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EIP"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-33",
+      "display" : "Observation Related Specimen Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[1].valueReference(Group.member.entity(Specimen.identifier[1])",
+        "display" : "extension[1].valueReference(Group.member.entity(Specimen.identifier[1])",
+        "equivalence" : "equivalent",
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-33 COUNT>1"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EIP"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-33",
+      "display" : "Observation Related Specimen Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[2].uri",
+        "display" : "extension[2].uri",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.specimen"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-33 COUNT>1"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EIP"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-33",
+      "display" : "Observation Related Specimen Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[2].valueReference(Group.member.entity(Specimen.identifier[2]))",
+        "display" : "extension[2].valueReference(Group.member.entity(Specimen.identifier[2]))",
+        "equivalence" : "equivalent",
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-33 COUNT>1"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EIP"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-33",
+      "display" : "Observation Related Specimen Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Identifier"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "specimen(Specimen.identifier[1])",
+        "display" : "specimen(Specimen.identifier[1])",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "EIP[Identifier-PlacerAssignedIdentifier]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-33 COUNT=1"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EIP"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "OBX-33",
+      "display" : "Observation Related Specimen Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Identifier"
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "specimen(Specimen.identifier[2])",
+        "display" : "specimen(Specimen.identifier[2])",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "EIP[Identifier-FillerAssignedIdentifier]"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF OBX-33 COUNT=1"
+        }]
+      }]
+    }]
+  }]
+}

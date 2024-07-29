@@ -1,0 +1,14 @@
+v2Xpath,cardinalityMin,cardinalityMax,condition,fhirattr,datatypeMap,vocabularyMap,targetDataType,dataType
+//CWE.1/text(),0,1,,coding.code,,,CodeableConcept,code
+//CWE.2/text(),0,1,,coding.display,,,,string
+//CWE.3/text(),0,1,,coding.system,,,,uri
+//CWE.7/text(),0,1,,coding.version,,,,string
+//CWE.4/text(),0,1,,coding.code,,,,code
+//CWE.5/text(),0,1,,coding.display,,,,string
+//CWE.6/text(),0,1,,coding.system,,,,uri
+//CWE.8/text(),0,1,,coding.version,,,,string
+//CWE.9/text(),0,1,,text,,,,string
+//CWE.10/text(),0,1,,coding.code,,,,code
+//CWE.11/text(),0,1,,coding.display,,,,string
+//CWE.12/text(),0,1,,coding.system,,,,uri
+//CWE.13/text(),0,1,,coding.version,,,,string

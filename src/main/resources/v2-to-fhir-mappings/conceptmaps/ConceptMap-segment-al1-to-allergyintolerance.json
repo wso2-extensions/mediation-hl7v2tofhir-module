@@ -1,0 +1,629 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "segment-al1-to-allergyintolerance",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from AL1 to <a href=\"http://hl7.org/fhir/R4/allergyintolerance.html\">AllergyIntolerance</a></p><p>ACTIVE (not intended for production usage). Published on 2024-03-22 by HL7 International / Orders and Observations (HL7 Orders and Observations Workgroup: <a href=\"http://www.hl7.org/Special/committees/orders\">http://www.hl7.org/Special/com...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>, Rob Hausam: <a href=\"mailto:rrhausam@gmail.com\">rrhausam@gmail.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Segment AL1 to the FHIR AllergyIntolerance Resource.</p>\n</div><br/><p><b>Group 1</b> Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td colspan=\"5\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"3\"><b>Target Concept Details</b></td><td><b>Comment</b></td><td colspan=\"3\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from </td><td><b>vocabularymap</b></td><td><b>value</b></td><td><b>datatypemap</b></td><td/><td colspan=\"2\"><b>Codes</b> from </td><td><b>narrative</b></td><td/></tr><tr><td style=\"border-right-width: 0px\">AL1</td><td style=\"border-left-width: 0px\"></td><td/><td>&quot;active&quot;</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">clinicalStatus.coding.code</td><td style=\"border-left-width: 0px\">clinicalStatus.coding.code</td><td/><td>While .clinicalStatus is not required, constraint ait-1 (AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.) does necessitate populating this element in the map as it's not possible to infer a verificationStatus of &quot;entered-in-error&quot; based on the data in AL1.</td></tr><tr><td style=\"border-right-width: 0px\">AL1</td><td style=\"border-left-width: 0px\"></td><td/><td>&quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical&quot;</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">clinicalStatus.coding.system</td><td style=\"border-left-width: 0px\">clinicalStatus.coding.system</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">AL1-2</td><td style=\"border-left-width: 0px\">Allergen Type Code</td><td>AllergenType[AllergyIntoleranceCategory]</td><td/><td>CWE[code]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">category</td><td style=\"border-left-width: 0px\">category</td><td/><td>The FHIR table has a &quot;required&quot; binding. Do we need to expand the values in the FHIR table?\n\nCould other be used for:\nMiscellaneous allergy\nMiscellaneous contraindication\nAnimal Allergy\n\nHL70127 is a user defined table\\</td></tr><tr><td style=\"border-right-width: 0px\">AL1-2</td><td style=\"border-left-width: 0px\">Allergen Type Code</td><td/><td>&quot;http://hl7.org/fhir/StructureDefinition/alternate-codes&quot;</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">category.extension[1].url</td><td style=\"border-left-width: 0px\">category.extension[1].url</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">AL1-2</td><td style=\"border-left-width: 0px\">Allergen Type Code</td><td>AllergenType[AllergyIntoleranceOriginalCategory]</td><td/><td>CWE[CodeableConcept]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">category.extension[1].valueCodeableConcept</td><td style=\"border-left-width: 0px\">category.extension[1].valueCodeableConcept</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">AL1-2</td><td style=\"border-left-width: 0px\">Allergen Type Code</td><td>AllergyType</td><td/><td>CWE[code]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">type</td><td style=\"border-left-width: 0px\">type</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">AL1-3</td><td style=\"border-left-width: 0px\">Allergen Code/Mnemonic/Description</td><td/><td/><td>CWE[CodeableConcept]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">code</td><td style=\"border-left-width: 0px\">code</td><td/><td/></tr><tr><td style=\"border-right-width: 0px\">AL1-4</td><td style=\"border-left-width: 0px\">Allergy Severity Code</td><td>AllergySeverity[AllergyIntolerance.criticality]</td><td/><td>CWE[code]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">criticality</td><td style=\"border-left-width: 0px\">criticality</td><td>If severity was used equivalent to criticality</td><td>Note that AllergyIntolerance.reaction.severity is available in FHIR but from a base standard perspective that is actually not the most appropriate and would require that AL1-6 is valued as well.  However, a local implementation may have used vocabulary that better fits AllergyIntolerance.reaction.severity and should then consider that instead as a local variation.  Note that the .reaction though is at a particular time, while .criticality is an overall assement that matches HL7 v2 generally better.</td></tr><tr><td style=\"border-right-width: 0px\">AL1-4</td><td style=\"border-left-width: 0px\">Allergy Severity Code</td><td/><td>&quot;http://hl7.org/fhir/StructureDefinition/alternate-codes&quot;</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">criticality.extension[1].url</td><td style=\"border-left-width: 0px\">criticality.extension[1].url</td><td>If severity was used equivalent to criticality</td><td/></tr><tr><td style=\"border-right-width: 0px\">AL1-4</td><td style=\"border-left-width: 0px\">Allergy Severity Code</td><td>AllergyTyp[AllergyIntolerance.criticality-original]</td><td/><td>CWE[CodeableConcept]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">criticality.extension[1].valueCodeableConcept</td><td style=\"border-left-width: 0px\">criticality.extension[1].valueCodeableConcept</td><td>If severity was used equivalent to criticality</td><td/></tr><tr><td style=\"border-right-width: 0px\">AL1-5</td><td style=\"border-left-width: 0px\">Allergy Reaction Code</td><td/><td/><td>ST[CodeableConcept]</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">reaction.manifestation.text</td><td style=\"border-left-width: 0px\">reaction.manifestation.text</td><td/><td>AllergyIntolerance.reaction can repeat, presumably to capture both multiple manifestations of the reaction (rash and nausea) as well as reactions to independent exposures (last week and last month) - we may want to confirm this understanding.\\</td></tr><tr><td style=\"border-right-width: 0px\">AL1-6</td><td style=\"border-left-width: 0px\">Identification Date</td><td/><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">onsetDateTime</td><td style=\"border-left-width: 0px\">onsetDateTime</td><td/><td>Withdrawn as of 2.7, Refer to IAM-11 Onset or IAM-13 Reported Date</td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "type",
+      "valueCode" : "derived-from"
+    },
+    {
+      "url" : "label",
+      "valueString" : "Segment AL1 to AllergyIntolerance.fsh"
+    },
+    {
+      "url" : "url",
+      "valueUri" : "https://docs.google.com/spreadsheets/d/10aUgY2Kw3sYlbaw-QHykWri8J3Fb3J_Xc7DvCY_nzyE/edit?usp=sharing"
+    }],
+    "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+  }],
+  "url" : "http://hl7.org/fhir/uv/v2mappings/segment-al1-to-allergyintolerance",
+  "version" : "1.0.0-ballot",
+  "name" : "SegmentAL1ToAllergyIntolerance",
+  "title" : "Segment AL1 to AllergyIntolerance Map",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-22",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "name" : "HL7 Orders and Observations Workgroup",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  },
+  {
+    "name" : "Keith W. Boone",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "kboone@ainq.com"
+    }]
+  },
+  {
+    "name" : "Rob Hausam",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "rrhausam@gmail.com"
+    }]
+  }],
+  "description" : "This ConceptMap represents a mapping from the HL7 V2 Segment AL1 to the FHIR AllergyIntolerance Resource.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri" : "AL1",
+  "targetUri" : "AllergyIntolerance",
+  "group" : [{
+    "element" : [{
+      "code" : "AL1",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "code"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "clinicalStatus.coding.code",
+        "display" : "clinicalStatus.coding.code",
+        "equivalence" : "equivalent",
+        "comment" : "While .clinicalStatus is not required, constraint ait-1 (AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.) does necessitate populating this element in the map as it's not possible to infer a verificationStatus of \"entered-in-error\" based on the data in AL1.",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"active\""
+        }]
+      }]
+    },
+    {
+      "code" : "AL1",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "clinicalStatus.coding.system",
+        "display" : "clinicalStatus.coding.system",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AL1-2",
+      "display" : "Allergen Type Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "code"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "category",
+        "display" : "category",
+        "equivalence" : "equivalent",
+        "comment" : "The FHIR table has a \"required\" binding. Do we need to expand the values in the FHIR table?\n\nCould other be used for:\nMiscellaneous allergy\nMiscellaneous contraindication\nAnimal Allergy\n\nHL70127 is a user defined table\\",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[code]"
+        },
+        {
+          "property" : "vocabulary-map",
+          "value" : "AllergenType[AllergyIntoleranceCategory]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AL1-2",
+      "display" : "Allergen Type Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "category.extension[1].url",
+        "display" : "category.extension[1].url",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://hl7.org/fhir/StructureDefinition/alternate-codes\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AL1-2",
+      "display" : "Allergen Type Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "category.extension[1].valueCodeableConcept",
+        "display" : "category.extension[1].valueCodeableConcept",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[CodeableConcept]"
+        },
+        {
+          "property" : "vocabulary-map",
+          "value" : "AllergenType[AllergyIntoleranceOriginalCategory]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AL1-2",
+      "display" : "Allergen Type Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "code"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "type",
+        "display" : "type",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[code]"
+        },
+        {
+          "property" : "vocabulary-map",
+          "value" : "AllergyType"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AL1-3",
+      "display" : "Allergen Code/Mnemonic/Description",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "code",
+        "display" : "code",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[CodeableConcept]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AL1-4",
+      "display" : "Allergy Severity Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "code"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "criticality",
+        "display" : "criticality",
+        "equivalence" : "equivalent",
+        "comment" : "Note that AllergyIntolerance.reaction.severity is available in FHIR but from a base standard perspective that is actually not the most appropriate and would require that AL1-6 is valued as well.  However, a local implementation may have used vocabulary that better fits AllergyIntolerance.reaction.severity and should then consider that instead as a local variation.  Note that the .reaction though is at a particular time, while .criticality is an overall assement that matches HL7 v2 generally better.",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[code]"
+        },
+        {
+          "property" : "vocabulary-map",
+          "value" : "AllergySeverity[AllergyIntolerance.criticality]"
+        }],
+        "product" : [{
+          "property" : "narrative",
+          "value" : "If severity was used equivalent to criticality"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AL1-4",
+      "display" : "Allergy Severity Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "criticality.extension[1].url",
+        "display" : "criticality.extension[1].url",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://hl7.org/fhir/StructureDefinition/alternate-codes\""
+        }],
+        "product" : [{
+          "property" : "narrative",
+          "value" : "If severity was used equivalent to criticality"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AL1-4",
+      "display" : "Allergy Severity Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "criticality.extension[1].valueCodeableConcept",
+        "display" : "criticality.extension[1].valueCodeableConcept",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[CodeableConcept]"
+        },
+        {
+          "property" : "vocabulary-map",
+          "value" : "AllergyTyp[AllergyIntolerance.criticality-original]"
+        }],
+        "product" : [{
+          "property" : "narrative",
+          "value" : "If severity was used equivalent to criticality"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ST"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AL1-5",
+      "display" : "Allergy Reaction Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "reaction.manifestation.text",
+        "display" : "reaction.manifestation.text",
+        "equivalence" : "equivalent",
+        "comment" : "AllergyIntolerance.reaction can repeat, presumably to capture both multiple manifestations of the reaction (rash and nausea) as well as reactions to independent exposures (last week and last month) - we may want to confirm this understanding.\\",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "ST[CodeableConcept]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "DT"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "AL1-6",
+      "display" : "Identification Date",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "dateTime"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "onsetDateTime",
+        "display" : "onsetDateTime",
+        "equivalence" : "equivalent",
+        "comment" : "Withdrawn as of 2.7, Refer to IAM-11 Onset or IAM-13 Reported Date"
+      }]
+    }]
+  }]
+}

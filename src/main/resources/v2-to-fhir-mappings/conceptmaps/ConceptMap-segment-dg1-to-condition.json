@@ -1,0 +1,614 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "segment-dg1-to-condition",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from DG1 to <a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></p><p>ACTIVE (not intended for production usage). Published on 2024-03-22 by HL7 International / Orders and Observations (HL7 Orders and Observations Workgroup: <a href=\"http://www.hl7.org/Special/committees/orders\">http://www.hl7.org/Special/com...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>, Rob Hausam: <a href=\"mailto:rrhausam@gmail.com\">rrhausam@gmail.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Segment DG1 to the FHIR Condition Resource.</p>\n</div><br/><p><b>Group 1</b> Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td colspan=\"4\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td><td><b>Comment</b></td><td colspan=\"2\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from </td><td><b>datatypemap</b></td><td><b>value</b></td><td/><td colspan=\"2\"><b>Codes</b> from </td><td/></tr><tr><td style=\"border-right-width: 0px\">DG1-3</td><td style=\"border-left-width: 0px\">Diagnosis Code</td><td>CWE[CodeableConcept]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">code[1]</td><td style=\"border-left-width: 0px\">code[1]</td><td/></tr><tr><td style=\"border-right-width: 0px\">DG1-4</td><td style=\"border-left-width: 0px\">Diagnosis Description</td><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">code[1].text</td><td style=\"border-left-width: 0px\">code[1].text</td><td/></tr><tr><td style=\"border-right-width: 0px\">DG1-5</td><td style=\"border-left-width: 0px\">Diagnosis Date/Time</td><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">onsetDateTime</td><td style=\"border-left-width: 0px\">onsetDateTime</td><td>Should confirm that these two concepts are equivalent. Condition.recordedDate is also available</td></tr><tr><td style=\"border-right-width: 0px\">DG1-16</td><td style=\"border-left-width: 0px\">Diagnosing Clinician</td><td>XCN[Practitioner]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">asserter(Practitioner)</td><td style=\"border-left-width: 0px\">asserter(Practitioner)</td><td>Condition.recorder is also an option. Neither of these fields can repeat like DG1-16 can.</td></tr><tr><td style=\"border-right-width: 0px\">DG1-19</td><td style=\"border-left-width: 0px\">Attestation Date/Time</td><td/><td>&quot;http://www.hl7.org/fhir/extension-condition-asserteddate&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[1].url</td><td style=\"border-left-width: 0px\">extension[1].url</td><td/></tr><tr><td style=\"border-right-width: 0px\">DG1-19</td><td style=\"border-left-width: 0px\">Attestation Date/Time</td><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[1].valueDateTime</td><td style=\"border-left-width: 0px\">extension[1].valueDateTime</td><td>It is unclear whether to use recorded or asserted date.  What is your opinion?</td></tr><tr><td style=\"border-right-width: 0px\">DG1-19</td><td style=\"border-left-width: 0px\">Attestation Date/Time</td><td/><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">recordedDate</td><td style=\"border-left-width: 0px\">recordedDate</td><td>It is unclear whether to use recorded or asserted date.  What is your opinion?</td></tr><tr><td style=\"border-right-width: 0px\">DG1-20</td><td style=\"border-left-width: 0px\">Diagnosis Identifier</td><td>EI[Identifier-Extension]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">identifier</td><td style=\"border-left-width: 0px\">identifier</td><td/></tr><tr><td style=\"border-right-width: 0px\">DG1-21</td><td style=\"border-left-width: 0px\">Diagnosis Action Code</td><td/><td>&quot;entered-in-error&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">verificationStatus.coding.code</td><td style=\"border-left-width: 0px\">verificationStatus.coding.code</td><td>Other values (A and U) don't map to anything</td></tr><tr><td style=\"border-right-width: 0px\">DG1-21</td><td style=\"border-left-width: 0px\">Diagnosis Action Code</td><td/><td>&quot;http://terminology.hl7.org/CodeSystem/condition-ver-status&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">verificationStatus.coding.system</td><td style=\"border-left-width: 0px\">verificationStatus.coding.system</td><td/></tr><tr><td style=\"border-right-width: 0px\">DG1-22</td><td style=\"border-left-width: 0px\">Parent Diagnosis</td><td/><td>&quot;http://hl7.org/fhir/StructureDefinition/condition-dueTo&quot;</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[2].url</td><td style=\"border-left-width: 0px\">extension[2].url</td><td/></tr><tr><td style=\"border-right-width: 0px\">DG1-22</td><td style=\"border-left-width: 0px\">Parent Diagnosis</td><td>EI[Condition]</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">extension[2].valueReference(Condition)</td><td style=\"border-left-width: 0px\">extension[2].valueReference(Condition)</td><td>Extensions for occurredFollowing and related also exist</td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "type",
+      "valueCode" : "derived-from"
+    },
+    {
+      "url" : "label",
+      "valueString" : "Segment DG1 to Condition.fsh"
+    },
+    {
+      "url" : "url",
+      "valueUri" : "https://docs.google.com/spreadsheets/d/1dDE9G4Az3mE7a0mBw98PJeN9HzHQmX-ZR7ijKAiAAbA/edit#gid=0"
+    }],
+    "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+  }],
+  "url" : "http://hl7.org/fhir/uv/v2mappings/segment-dg1-to-condition",
+  "version" : "1.0.0-ballot",
+  "name" : "SegmentDG1ToCondition",
+  "title" : "Segment DG1 to Condition Map",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-22",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "name" : "HL7 Orders and Observations Workgroup",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  },
+  {
+    "name" : "Keith W. Boone",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "kboone@ainq.com"
+    }]
+  },
+  {
+    "name" : "Rob Hausam",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "rrhausam@gmail.com"
+    }]
+  }],
+  "description" : "This ConceptMap represents a mapping from the HL7 V2 Segment DG1 to the FHIR Condition Resource.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri" : "DG1",
+  "targetUri" : "Condition",
+  "group" : [{
+    "element" : [{
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "CWE"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-3",
+      "display" : "Diagnosis Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "CodeableConcept"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "code[1]",
+        "display" : "code[1]",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "CWE[CodeableConcept]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ST"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-4",
+      "display" : "Diagnosis Description",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "code[1].text",
+        "display" : "code[1].text",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "DTM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-5",
+      "display" : "Diagnosis Date/Time",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "DateTime"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "onsetDateTime",
+        "display" : "onsetDateTime",
+        "equivalence" : "equivalent",
+        "comment" : "Should confirm that these two concepts are equivalent. Condition.recordedDate is also available"
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "XCN"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : -1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-16",
+      "display" : "Diagnosing Clinician",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Reference"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "asserter(Practitioner)",
+        "display" : "asserter(Practitioner)",
+        "equivalence" : "equivalent",
+        "comment" : "Condition.recorder is also an option. Neither of these fields can repeat like DG1-16 can.",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "XCN[Practitioner]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "DTM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-19",
+      "display" : "Attestation Date/Time",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[1].url",
+        "display" : "extension[1].url",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://www.hl7.org/fhir/extension-condition-asserteddate\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "DTM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-19",
+      "display" : "Attestation Date/Time",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "dateTime"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[1].valueDateTime",
+        "display" : "extension[1].valueDateTime",
+        "equivalence" : "equivalent",
+        "comment" : "It is unclear whether to use recorded or asserted date.  What is your opinion?"
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "DTM"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-19",
+      "display" : "Attestation Date/Time",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "dateTime"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "recordedDate",
+        "display" : "recordedDate",
+        "equivalence" : "equivalent",
+        "comment" : "It is unclear whether to use recorded or asserted date.  What is your opinion?"
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EI"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-20",
+      "display" : "Diagnosis Identifier",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "identifier"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : -1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "identifier",
+        "display" : "identifier",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "EI[Identifier-Extension]"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ID"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-21",
+      "display" : "Diagnosis Action Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "code"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "verificationStatus.coding.code",
+        "display" : "verificationStatus.coding.code",
+        "equivalence" : "equivalent",
+        "comment" : "Other values (A and U) don't map to anything",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"entered-in-error\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "ID"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-21",
+      "display" : "Diagnosis Action Code",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 0
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "verificationStatus.coding.system",
+        "display" : "verificationStatus.coding.system",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://terminology.hl7.org/CodeSystem/condition-ver-status\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EI"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-22",
+      "display" : "Parent Diagnosis",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "uri"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[2].url",
+        "display" : "extension[2].url",
+        "equivalence" : "equivalent",
+        "dependsOn" : [{
+          "property" : "value",
+          "value" : "\"http://hl7.org/fhir/StructureDefinition/condition-dueTo\""
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "type",
+          "valueCode" : "EI"
+        },
+        {
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "DG1-22",
+      "display" : "Parent Diagnosis",
+      "target" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "type",
+            "valueCode" : "Reference"
+          },
+          {
+            "url" : "cardinalityMin",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "cardinalityMax",
+            "valueInteger" : 1
+          }],
+          "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+        }],
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "extension[2].valueReference(Condition)",
+        "display" : "extension[2].valueReference(Condition)",
+        "equivalence" : "equivalent",
+        "comment" : "Extensions for occurredFollowing and related also exist",
+        "dependsOn" : [{
+          "property" : "data-type-map",
+          "value" : "EI[Condition]"
+        }]
+      }]
+    }]
+  }]
+}

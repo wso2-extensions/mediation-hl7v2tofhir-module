@@ -1,0 +1,666 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "segment-msh-to-messageheader",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from MSH to <a href=\"http://hl7.org/fhir/R4/messageheader.html\">MessageHeader</a></p><p>ACTIVE (not intended for production usage). Published on 2024-03-22 by HL7 International / Orders and Observations (HL7 Orders and Observations Workgroup: <a href=\"http://www.hl7.org/Special/committees/orders\">http://www.hl7.org/Special/com...</a>, Keith W. Boone: <a href=\"mailto:kboone@ainq.com\">kboone@ainq.com</a>, Rob Hausam: <a href=\"mailto:rrhausam@gmail.com\">rrhausam@gmail.com</a>). Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.</p><div><p>This ConceptMap represents a mapping from the HL7 V2 Segment MSH to the FHIR MessageHeader Resource.</p>\n</div><br/><p><b>Group 1</b> Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td colspan=\"3\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"3\"><b>Target Concept Details</b></td><td><b>Comment</b></td><td colspan=\"3\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from </td><td><b>references</b></td><td/><td colspan=\"2\"><b>Codes</b> from </td><td><b>antlr</b></td><td/></tr><tr><td style=\"border-right-width: 0px\">MSH-3</td><td style=\"border-left-width: 0px\">HD</td><td>string</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">source[1]</td><td style=\"border-left-width: 0px\">source[1]</td><td/><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-3</td><td style=\"border-left-width: 0px\">HD</td><td>uri</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">source[1].endpoint</td><td style=\"border-left-width: 0px\">source[1].endpoint</td><td>IF MSH-24 NOT VALUED</td><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-4</td><td style=\"border-left-width: 0px\">HD</td><td>Reference(Organization)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">sender(Organization)</td><td style=\"border-left-width: 0px\">sender(Organization)</td><td/><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-5</td><td style=\"border-left-width: 0px\">HD</td><td>Reference(Device)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">destination[1].target(Device)</td><td style=\"border-left-width: 0px\">destination[1].target(Device)</td><td/><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-5</td><td style=\"border-left-width: 0px\">HD</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">destination[1].name</td><td style=\"border-left-width: 0px\">destination[1].name</td><td>IF MSH-25 VALUED</td><td/></tr><tr><td style=\"border-right-width: 0px\">MSH-5</td><td style=\"border-left-width: 0px\">HD</td><td/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">destination[1].endpoint</td><td style=\"border-left-width: 0px\">destination[1].endpoint</td><td>IF MSH-25 NOT VALUED</td><td/></tr><tr><td style=\"border-right-width: 0px\">MSH-6</td><td style=\"border-left-width: 0px\">HD</td><td>Reference(Organization)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">destination[1].receiver(Organization)</td><td style=\"border-left-width: 0px\">destination[1].receiver(Organization)</td><td>IF MSH-23 NOT VALUED</td><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-8</td><td style=\"border-left-width: 0px\">ST</td><td>string</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">meta.security</td><td style=\"border-left-width: 0px\">meta.security</td><td/><td>-1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-9</td><td style=\"border-left-width: 0px\">MSG</td><td>Coding</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">eventCoding</td><td style=\"border-left-width: 0px\">eventCoding</td><td/><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-11</td><td style=\"border-left-width: 0px\">PT</td><td>meta</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">meta</td><td style=\"border-left-width: 0px\">meta</td><td/><td>-1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-17</td><td style=\"border-left-width: 0px\">ID</td><td>string</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">sender(Organization.address.country)</td><td style=\"border-left-width: 0px\">sender(Organization.address.country)</td><td/><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-19</td><td style=\"border-left-width: 0px\">CWE</td><td>code</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">language</td><td style=\"border-left-width: 0px\">language</td><td/><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-22</td><td style=\"border-left-width: 0px\">XON</td><td>Reference(Organization)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">responsible(Organization)</td><td style=\"border-left-width: 0px\">responsible(Organization)</td><td/><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-23</td><td style=\"border-left-width: 0px\">XON</td><td>Reference(Organization)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">destination[1].receiver(Organization)</td><td style=\"border-left-width: 0px\">destination[1].receiver(Organization)</td><td/><td>-1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-24</td><td style=\"border-left-width: 0px\">HD</td><td>string</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">source.endpoint</td><td style=\"border-left-width: 0px\">source.endpoint</td><td/><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-24</td><td style=\"border-left-width: 0px\">HD</td><td>uri</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">source.endpoint.extension.url</td><td style=\"border-left-width: 0px\">source.endpoint.extension.url</td><td>IF MSH-24 NOT VALUED AND MSH-3 NOT VALUED</td><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-24</td><td style=\"border-left-width: 0px\">HD</td><td>code</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">source.endpoint.extension.valueCode</td><td style=\"border-left-width: 0px\">source.endpoint.extension.valueCode</td><td>IF MSH-24 NOT VALUED AND MSH-3 NOT VALUED</td><td>1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-25</td><td style=\"border-left-width: 0px\">HD</td><td>uri</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">destination[1]</td><td style=\"border-left-width: 0px\">destination[1]</td><td/><td>-1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-25</td><td style=\"border-left-width: 0px\">HD</td><td>uri</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">destination[1].endpoint.extension.url</td><td style=\"border-left-width: 0px\">destination[1].endpoint.extension.url</td><td>IF MSH-25 NOT VALUED AND MSH-5 NOT VALUED</td><td>-1</td></tr><tr><td style=\"border-right-width: 0px\">MSH-25</td><td style=\"border-left-width: 0px\">HD</td><td>code</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">destination[1].endpoint.extension.valueCode</td><td style=\"border-left-width: 0px\">destination[1].endpoint.extension.valueCode</td><td>IF MSH-25 NOT VALUED AND MSH-5 NOT VALUED</td><td>-1</td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "type",
+      "valueCode" : "derived-from"
+    },
+    {
+      "url" : "label",
+      "valueString" : "Segment MSH to MessageHeader.fsh"
+    },
+    {
+      "url" : "url",
+      "valueUri" : "https://docs.google.com/spreadsheets/d/13pgda5xl-PwCgB9j0axyymwwv7RJVcrIzY8Ah1y1Y1M/edit#gid=0"
+    }],
+    "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/RelatedArtifact"
+  }],
+  "url" : "http://hl7.org/fhir/uv/v2mappings/segment-msh-to-messageheader",
+  "version" : "1.0.0-ballot",
+  "name" : "SegmentMSHToMessageHeader",
+  "title" : "Segment MSH to MessageHeader Map",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-03-22",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "name" : "HL7 Orders and Observations Workgroup",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  },
+  {
+    "name" : "Keith W. Boone",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "kboone@ainq.com"
+    }]
+  },
+  {
+    "name" : "Rob Hausam",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "rrhausam@gmail.com"
+    }]
+  }],
+  "description" : "This ConceptMap represents a mapping from the HL7 V2 Segment MSH to the FHIR MessageHeader Resource.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "copyright" : "Copyright (c) 2020, HL7 International, Inc., All Rights Reserved.",
+  "sourceUri" : "MSH",
+  "targetUri" : "MessageHeader",
+  "group" : [{
+    "element" : [{
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-3",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "source[1]",
+        "display" : "source[1]",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "string"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-3",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "source[1].endpoint",
+        "display" : "source[1].endpoint",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "uri"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF MSH-24 NOT VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-4",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "sender(Organization)",
+        "display" : "sender(Organization)",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "Reference(Organization)"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-5",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "destination[1].target(Device)",
+        "display" : "destination[1].target(Device)",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "Reference(Device)"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-5",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "destination[1].name",
+        "display" : "destination[1].name",
+        "equivalence" : "equivalent",
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF MSH-25 VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-5",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "destination[1].endpoint",
+        "display" : "destination[1].endpoint",
+        "equivalence" : "equivalent",
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF MSH-25 NOT VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : -1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-6",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "destination[1].receiver(Organization)",
+        "display" : "destination[1].receiver(Organization)",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "Reference(Organization)"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF MSH-23 NOT VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-8",
+      "display" : "ST",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "meta.security",
+        "display" : "meta.security",
+        "equivalence" : "equivalent",
+        "comment" : "-1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "string"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-9",
+      "display" : "MSG",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "eventCoding",
+        "display" : "eventCoding",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "Coding"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-11",
+      "display" : "PT",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "meta",
+        "display" : "meta",
+        "equivalence" : "equivalent",
+        "comment" : "-1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "meta"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-17",
+      "display" : "ID",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "sender(Organization.address.country)",
+        "display" : "sender(Organization.address.country)",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "string"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-19",
+      "display" : "CWE",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "language",
+        "display" : "language",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "code"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-22",
+      "display" : "XON",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "responsible(Organization)",
+        "display" : "responsible(Organization)",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "Reference(Organization)"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-23",
+      "display" : "XON",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "destination[1].receiver(Organization)",
+        "display" : "destination[1].receiver(Organization)",
+        "equivalence" : "equivalent",
+        "comment" : "-1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "Reference(Organization)"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-24",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "source.endpoint",
+        "display" : "source.endpoint",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "string"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-24",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "source.endpoint.extension.url",
+        "display" : "source.endpoint.extension.url",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "uri"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF MSH-24 NOT VALUED AND MSH-3 NOT VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-24",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "source.endpoint.extension.valueCode",
+        "display" : "source.endpoint.extension.valueCode",
+        "equivalence" : "equivalent",
+        "comment" : "1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "code"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF MSH-24 NOT VALUED AND MSH-3 NOT VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-25",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "destination[1]",
+        "display" : "destination[1]",
+        "equivalence" : "equivalent",
+        "comment" : "-1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "uri"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-25",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "destination[1].endpoint.extension.url",
+        "display" : "destination[1].endpoint.extension.url",
+        "equivalence" : "equivalent",
+        "comment" : "-1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "uri"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF MSH-25 NOT VALUED AND MSH-5 NOT VALUED"
+        }]
+      }]
+    },
+    {
+      "extension" : [{
+        "extension" : [{
+          "url" : "cardinalityMin",
+          "valueInteger" : 0
+        },
+        {
+          "url" : "cardinalityMax",
+          "valueInteger" : 1
+        }],
+        "url" : "http://hl7.org/fhir/uv/v2mappings/StructureDefinition/TypeInfo"
+      }],
+      "code" : "MSH-25",
+      "display" : "HD",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "destination[1].endpoint.extension.valueCode",
+        "display" : "destination[1].endpoint.extension.valueCode",
+        "equivalence" : "equivalent",
+        "comment" : "-1",
+        "dependsOn" : [{
+          "property" : "references",
+          "value" : "code"
+        }],
+        "product" : [{
+          "property" : "antlr",
+          "value" : "IF MSH-25 NOT VALUED AND MSH-5 NOT VALUED"
+        }]
+      }]
+    }]
+  }]
+}
