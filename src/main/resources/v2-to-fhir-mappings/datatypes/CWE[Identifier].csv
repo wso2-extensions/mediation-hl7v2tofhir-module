@@ -1,0 +1,3 @@
+v2Xpath,cardinalityMin,cardinalityMax,condition,fhirattr,datatypeMap,vocabularyMap,targetDataType,dataType
+//CWE.1/text(),0,1,,value,,,Identifier,string
+//CWE.3/text(),0,1,,system,,,,uri

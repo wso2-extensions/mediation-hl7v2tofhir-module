@@ -1,0 +1,14 @@
+v2Xpath,cardinalityMin,cardinalityMax,condition,fhirattr,datatypeMap,vocabularyMap,targetDataType,dataType
+//XAD.1,0,1,,line,SAD[Address],,Address,string
+//XAD.2/text(),0,1,,line,,,,string
+//XAD.3/text(),0,1,,city,,,,string
+//XAD.4/text(),0,1,,state,,,,string
+//XAD.5/text(),0,1,,postalCode,,,,string
+//XAD.6/text(),0,1,,country,,,,string
+//XAD.7/text(),0,1,boolean(<parentXpath>/XAD.7[text()='M']) or boolean(<parentXpath>/XAD.7[text()='SH']) ,type,,,,code
+//XAD.7/text(),0,1,boolean(<parentXpath>/XAD.7[text()='BA']) or boolean(<parentXpath>/XAD.7[text()='BI']) or boolean(<parentXpath>/XAD.7[text()='C']) or boolean(<parentXpath>/XAD.7[text()='B']) or boolean(<parentXpath>/XAD.7[text()='H']) or boolean(<parentXpath>/XAD.7[text()='O']) ,use,,,,code
+//XAD.9,0,1,,district,CWE[string],,,string
+//XAD12,0,1,not(boolean(<parentXpath>/XAD.13)) and not(boolean(<parentXpath>/XAD.14)),period,DR[Period],,,Period
+//XAD.13/text(),0,1,,period.start,,,,dateTime
+//XAD.14/text(),0,1,,period.start,,,,dateTime
+//XAD.19/text(),0,1,,line,,,,string

@@ -1,0 +1,7 @@
+v2Xpath,cardinalityMin,cardinalityMax,condition,fhirattr,datatypeMap,vocabularyMap,targetDataType,dataType
+//XTN.1/text(),0,1,not(boolean(//PID/PID.13/XTN.3[text()='Internet']) or boolean(//PID/PID.13/XTN.3[text()='X.400'])) and not(boolean(//PID/PID.13/XTN.7) and boolean(//PID/PID.13/XTN.12)),value,,,ContactPoint,string
+//XTN.4/text(),0,1,boolean(<parentXpath>/XTN.3[text()='Internet']) or boolean(<parentXpath>/XTN.3[text()='X.400']),value,,,,string
+//XTN.12/text(),0,1,not(boolean(<parentXpath>/XTN.3[text()='Internet']) or boolean(<parentXpath>/XTN.3[text()='X.400'])),value,,,,string
+//XTN.13/text(),0,1,,period.start,,,,dateTime
+//XTN.14/text(),0,1,,period.end,,,,dateTime
+//XTN.18/text(),0,1,,rank,,,,positiveInt

@@ -1,0 +1,4 @@
+v2Xpath,cardinalityMin,cardinalityMax,condition,fhirattr,datatypeMap,vocabularyMap,targetDataType,dataType
+//CWE.1/text(),0,1,boolean(<parentXpath>/CWE.1) and boolean(<parentXpath>/CWE.3),code,,,Quantity,code
+//CWE.2/text(),0,1,,unit,,,,string
+//CWE.3/text(),0,1,boolean(<parentXpath>/CWE.1) and boolean(<parentXpath>/CWE.3),system,,,,uri

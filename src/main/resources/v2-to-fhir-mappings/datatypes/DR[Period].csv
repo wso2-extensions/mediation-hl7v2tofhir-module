@@ -1,0 +1,3 @@
+v2Xpath,cardinalityMin,cardinalityMax,condition,fhirattr,datatypeMap,vocabularyMap,targetDataType,dataType
+//DR.1/text(),0,1,,start,,,dateTime,dateTime
+//DR.2/TS.1/text(),0,1,,end,,,,dateTime

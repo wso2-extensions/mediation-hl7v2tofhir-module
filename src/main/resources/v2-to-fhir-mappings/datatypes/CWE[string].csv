@@ -1,0 +1,3 @@
+v2Xpath,cardinalityMin,cardinalityMax,condition,fhirattr,datatypeMap,vocabularyMap,targetDataType,dataType
+//CWE.2/text(),0,1,not(boolean(<parentXpath>/CWE.9)),value,,,string,string
+//CWE.9/text(),0,1,,value,,,,string

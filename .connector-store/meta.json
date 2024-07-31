@@ -1,0 +1,23 @@
+{
+  "name" : "HL7v2 to FHIR Module",
+  "owner" : "WSO2",
+  "category": "Developer Tools",
+  "documentationUrl": "https://github.com/wso2-extensions/mediation-hl7v2tofhir-module/tree/main/docs",
+  "description": "Converts HL7 V2 messages to FHIR resources, ensuring interoperability between traditional HL7 V2 formats and modern FHIR standards.",
+  "status": "Active",
+  "labels": [
+    "HL7",
+    "FHIR",
+    "Healthcare"
+  ],
+  "releases": [
+    {
+      "tagName": "1.0.0",
+      "products": [
+        "MI 4.2.0",
+        "MI 1.2.0",
+        "EI 6.6.0"
+      ]
+    }
+  ]
+}

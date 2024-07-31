@@ -1,0 +1,11 @@
+v2Xpath,cardinalityMin,cardinalityMax,condition,fhirattr,datatypeMap,vocabularyMap,targetDataType,dataType
+//XPN.1,0,1,,family,FN[HumanName],,HumanName,string
+//XPN.2/text(),0,1,,given,,,,string
+//XPN.3/text(),0,1,,given,,,,string
+//XPN.4/text(),0,1,,suffix,,,,string
+//XPN.5/text(),0,1,,prefix,,,,string
+//XPN.6/text(),0,1,,suffix,,,,string
+//XPN.10,0,1,not(boolean(<parentXpath>/XPN.12)) and not(boolean(<parentXpath>/XPN.13)),period,DR[Period],,,Period
+//XPN.12/TS.1/text(),0,1,,period.start,,,,dateTime
+//XPN.13/TS.1/text(),0,1,,period.end,,,,dateTime
+//XPN.14/text(),0,1,,suffix,,,,string

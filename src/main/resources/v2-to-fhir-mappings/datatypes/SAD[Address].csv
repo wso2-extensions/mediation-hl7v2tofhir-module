@@ -1,0 +1,4 @@
+v2Xpath,cardinalityMin,cardinalityMax,condition,fhirattr,datatypeMap,vocabularyMap,targetDataType,dataType
+//SAD.1/text(),0,1,,line,,,Address,string
+//SAD.2/text(),0,1,,line,,,,string
+//SAD.2/text(),0,1,,line,,,,string
