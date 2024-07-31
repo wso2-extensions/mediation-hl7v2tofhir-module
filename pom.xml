@@ -22,7 +22,7 @@
 
     <groupId>org.wso2.carbon.module</groupId>
     <artifactId>mediation-hl7v2tofhir-module</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>WSO2 MI - V2 to FHIR Module</name>
     <url>http://wso2.org</url>
@@ -31,7 +31,7 @@
 
     <properties>
         <skip-tests>true</skip-tests>
-        <fhir-base.version>1.0.0-SNAPSHOT</fhir-base.version>
+        <fhir-base.version>1.0.0</fhir-base.version>
         <connector.name>v2tofhir</connector.name>
         <hapi-fhir.version>4.1.0</hapi-fhir.version>
         <commons.csv.version>1.8</commons.csv.version>
@@ -114,7 +114,7 @@
                                 <artifactItem>
                                     <groupId>org.wso2.carbon.module</groupId>
                                     <artifactId>mediation-fhirbase-module</artifactId>
-                                    <version>1.0.0-SNAPSHOT</version>
+                                    <version>${fhir-base.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>target/connector/dependencies</outputDirectory>
