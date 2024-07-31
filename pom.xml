@@ -22,7 +22,7 @@
 
     <groupId>org.wso2.carbon.module</groupId>
     <artifactId>mediation-hl7v2tofhir-module</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>WSO2 MI - V2 to FHIR Module</name>
     <url>http://wso2.org</url>
