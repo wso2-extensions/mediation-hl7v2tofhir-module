@@ -1,10 +1,15 @@
 {
   "name" : "HL7v2 to FHIR Module",
   "owner" : "WSO2",
+  "product": "MI",
   "category": "Developer Tools",
   "documentationUrl": "https://github.com/wso2-extensions/mediation-hl7v2tofhir-module/tree/main/docs",
+  "mavenGroupId": "org.wso2.carbon.module",
+  "mavenArtifactId": "mediation-hl7v2tofhir-module",
   "description": "Converts HL7 V2 messages to FHIR resources, ensuring interoperability between traditional HL7 V2 formats and modern FHIR standards.",
   "status": "Active",
+  "connectorRank": 194,
+  "type": "Connector",
   "labels": [
     "HL7",
     "FHIR",
@@ -16,7 +21,16 @@
       "products": [
         "MI 4.2.0",
         "MI 1.2.0"
-      ]
+      ],
+      "operations": [
+        {
+            "name": "createResources",
+            "description": "Init configuration for FHIR repository connector.",
+            "isHidden": false
+        }
+      ],
+      "connections": [],
+      "isHidden": false
     }
   ]
 }
