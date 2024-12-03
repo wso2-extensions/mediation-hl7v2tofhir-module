@@ -8,7 +8,7 @@
   "mavenArtifactId": "mediation-hl7v2tofhir-module",
   "description": "Converts HL7 V2 messages to FHIR resources, ensuring interoperability between traditional HL7 V2 formats and modern FHIR standards.",
   "status": "Active",
-  "connectorRank": 194,
+  "rank": 194,
   "type": "Connector",
   "labels": [
     "HL7",
