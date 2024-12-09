@@ -20,8 +20,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <groupId>org.wso2.carbon.module</groupId>
-    <artifactId>mediation-hl7v2tofhir-module</artifactId>
+    <groupId>org.wso2.integration.module</groupId>
+    <artifactId>mi-module-hl7v2tofhir</artifactId>
     <version>1.0.1-SNAPSHOT</version>
 
     <name>WSO2 MI - V2 to FHIR Module</name>
@@ -51,6 +51,13 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <tagNameFormat>@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.7.0</version>
                 <configuration>
@@ -67,7 +74,7 @@
                         <id>assemble-connector</id>
                         <phase>compile</phase>
                         <goals>
-                            <goal>attached</goal>
+                            <goal>single</goal>
                         </goals>
                         <configuration>
                             <finalName>${connector.name}-connector-${project.version}</finalName>
