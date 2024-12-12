@@ -46,7 +46,12 @@
             <version>${fhir-base.version}</version>
         </dependency>
     </dependencies>
-
+    <scm>
+        <connection>scm:git:https://github.com/wso2-extensions/mediation-hl7v2tofhir-module</connection>
+        <url>https://github.com/wso2-extensions/mediation-hl7v2tofhir-module.git</url>
+        <developerConnection>scm:git:https://github.com/wso2-extensions/mediation-hl7v2tofhir-module</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
     <build>
         <plugins>
             <plugin>
