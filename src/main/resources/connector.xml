@@ -24,5 +24,6 @@
 		<dependency component="v2toFhir" />
 		<description>WSO2 HL7v2 to FHIR connector</description>
 	</component>
+	<displayName>HL7v2 to FHIR</displayName>
 	<icon>icon/icon-small.gif</icon>
 </connector>
