@@ -16,13 +16,11 @@
   ~ specific language governing permissions and limitations
   ~ under the License.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <groupId>org.wso2.integration.module</groupId>
     <artifactId>mi-module-hl7v2tofhir</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <name>WSO2 MI - V2 to FHIR Module</name>
     <url>http://wso2.org</url>
@@ -50,7 +48,7 @@
         <connection>scm:git:https://github.com/wso2-extensions/mediation-hl7v2tofhir-module</connection>
         <url>https://github.com/wso2-extensions/mediation-hl7v2tofhir-module.git</url>
         <developerConnection>scm:git:https://github.com/wso2-extensions/mediation-hl7v2tofhir-module</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v1.0.1</tag>
     </scm>
     <build>
         <plugins>
