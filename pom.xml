@@ -31,7 +31,7 @@
 
     <properties>
         <skip-tests>true</skip-tests>
-        <fhir-base.version>1.0.0</fhir-base.version>
+        <fhir-base.version>1.1.1</fhir-base.version>
         <connector.name>v2tofhir</connector.name>
         <hapi-fhir.version>4.1.0</hapi-fhir.version>
         <commons.csv.version>1.8</commons.csv.version>
@@ -41,8 +41,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.wso2.carbon.module</groupId>
-            <artifactId>mediation-fhirbase-module</artifactId>
+            <groupId>org.wso2.integration.module</groupId>
+            <artifactId>mi-module-fhirbase</artifactId>
             <version>${fhir-base.version}</version>
         </dependency>
     </dependencies>
@@ -124,8 +124,8 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>org.wso2.carbon.module</groupId>
-                                    <artifactId>mediation-fhirbase-module</artifactId>
+                                    <groupId>org.wso2.integration.module</groupId>
+                                    <artifactId>mi-module-fhirbase</artifactId>
                                     <version>${fhir-base.version}</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
