@@ -1,52 +1,54 @@
 {
-  "name" : "HL7v2 to FHIR",
-  "owner" : "WSO2",
-  "product": "MI",
-  "category": "Developer Tools",
-  "documentationUrl": "https://github.com/wso2-extensions/mediation-hl7v2tofhir-module/tree/main/docs",
-  "mavenGroupId": "org.wso2.integration.module",
-  "mavenArtifactId": "mi-module-hl7v2tofhir",
-  "description": "Converts HL7 V2 messages to FHIR resources, ensuring interoperability between traditional HL7 V2 formats and modern FHIR standards.",
-  "status": "Active",
-  "rank": 194,
-  "type": "Connector",
-  "labels": [
-    "HL7",
-    "FHIR",
-    "Healthcare"
-  ],
-  "releases": [
-    {
-      "tagName": "v1.0.1",
-      "products": [
-        "MI 4.2.0",
-        "MI 1.2.0"
-      ],
-      "operations": [
+    "name": "HL7v2 to FHIR",
+    "owner": "WSO2",
+    "product": "MI",
+    "category": "Developer Tools",
+    "documentationUrl": "https://github.com/wso2-extensions/mediation-hl7v2tofhir-module/tree/main/docs",
+    "mavenGroupId": "org.wso2.integration.module",
+    "mavenArtifactId": "mi-module-hl7v2tofhir",
+    "description": "Converts HL7 V2 messages to FHIR resources, ensuring interoperability between traditional HL7 V2 formats and modern FHIR standards.",
+    "status": "Active",
+    "rank": 194,
+    "type": "Connector",
+    "labels": [
+        "HL7",
+        "FHIR",
+        "Healthcare"
+    ],
+    "releases": [
         {
-            "name": "createResources",
-            "description": "Init configuration for FHIR repository connector.",
+            "tagName": "v1.0.1",
+            "products": [
+                "MI 4.4.0",
+                "MI 4.3.0",
+                "MI 4.2.0",
+                "MI 1.2.0"
+            ],
+            "operations": [
+                {
+                    "name": "createResources",
+                    "description": "Init configuration for FHIR repository connector.",
+                    "isHidden": false
+                }
+            ],
+            "connections": [],
+            "isHidden": false
+        },
+        {
+            "tagName": "v1.0.0",
+            "products": [
+                "MI 4.2.0",
+                "MI 1.2.0"
+            ],
+            "operations": [
+                {
+                    "name": "createResources",
+                    "description": "Init configuration for FHIR repository connector.",
+                    "isHidden": false
+                }
+            ],
+            "connections": [],
             "isHidden": false
         }
-      ],
-      "connections": [],
-      "isHidden": false
-    },
-    {
-      "tagName": "v1.0.0",
-      "products": [
-        "MI 4.2.0",
-        "MI 1.2.0"
-      ],
-      "operations": [
-        {
-            "name": "createResources",
-            "description": "Init configuration for FHIR repository connector.",
-            "isHidden": false
-        }
-      ],
-      "connections": [],
-      "isHidden": false
-    }
-  ]
+    ]
 }
